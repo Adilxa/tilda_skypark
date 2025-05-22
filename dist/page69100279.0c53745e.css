@@ -1,0 +1,1338 @@
+[data-tilda-mode="edit"] .t-input-title {
+  margin-bottom: 0;
+}
+
+.t-submit {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+  outline: none;
+  height: 60px;
+  margin: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.t-submit_sending {
+  opacity: .5;
+}
+
+@media screen and (width <= 640px) {
+  .t-submit {
+    white-space: normal;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.t-form__inputsbox.t-form__inputsbox_flex {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  display: flex;
+}
+
+.t-form__inputsbox.t-form__inputsbox_flex.t-form__inputsbox_inrow {
+  -webkit-column-gap: 15px;
+  column-gap: 15px;
+}
+
+.t-form__inputsbox.t-form__inputsbox_flex .t-form__screen-wrapper_active {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  display: flex !important;
+}
+
+.t-form__inputsbox_inrow.t-form__inputsbox.t-form__inputsbox_flex .t-form__screen-wrapper_active {
+  -webkit-column-gap: 15px;
+  column-gap: 15px;
+}
+
+.t-form__inputsbox_flex .t-input-group_tx {
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.t-input {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.33;
+}
+
+.t-input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.t-input_bbonly {
+  border-bottom: 1px solid;
+  outline: none;
+  background-color: #0000 !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.t-input_pvis {
+  padding: 26px 20px 10px;
+}
+
+.tn-atom__form .t-input_pvis {
+  padding: 26px 20px 10px !important;
+}
+
+.t-input__vis-ph {
+  opacity: .5;
+  pointer-events: none;
+  text-overflow: ellipsis;
+  transform-origin: 0;
+  white-space: nowrap;
+  width: calc(100% - 40px);
+  height: 17px;
+  font-size: 16px;
+  line-height: 1;
+  transition: transform .2s linear;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.t-input:focus ~ .t-input__vis-ph, .t-input_has-content + .t-input__vis-ph {
+  text-overflow: inherit;
+  width: auto;
+  transform: translateY(-100%)scale(.7);
+}
+
+.t-input:invalid {
+  box-shadow: none;
+}
+
+fieldset.t-input-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.t-input-group_cb div[data-customstyle="yes"] {
+  vertical-align: middle;
+  display: inline;
+}
+
+.t-form_bbonly .t-input__vis-ph {
+  left: 0 !important;
+}
+
+.t-form_bbonly .js-error-control-box .t-input__vis-ph {
+  left: 10px !important;
+}
+
+.t-input-group_ta textarea.t-input {
+  resize: vertical;
+}
+
+.t-form__inputsbox_flex .t-input-group:not(.t-input-group_inonerow) {
+  width: 100%;
+}
+
+.t-input-group_inonerow:not(.t-input-group_inrow-last) {
+  margin-right: 15px;
+}
+
+.t-input-group_inonerow:not(.t-input-group_inrow-last):not(.t-input-group_inrow) {
+  margin-right: 0;
+}
+
+.t-input-group_inonerow.t-input-group_width100:not(.t-input-group_inrow-withsibling) {
+  width: 100%;
+  margin-right: 0;
+}
+
+.t-form__inputsbox_inrow .t-input-group_width25.t-input-group_inonerow {
+  width: calc(25% - 11.25px);
+}
+
+.t-form__inputsbox_inrow .t-input-group_width33.t-input-group_inonerow {
+  width: calc(33.3333% - 10px);
+}
+
+.t-form__inputsbox_inrow .t-input-group_width50.t-input-group_inonerow {
+  width: calc(50% - 7.5px);
+}
+
+.t-form__inputsbox_inrow .t-input-group_width100.t-input-group_inonerow {
+  width: 100%;
+}
+
+.t-form__inputsbox_inrow .t-input-group_inonerow, .t-form__inputsbox_inrow .t-input-group_inonerow.t-input-group_width100 {
+  margin-right: 0;
+}
+
+.t-form__inputsbox_inrow .t-input-group_width25:not(.t-input-group_inonerow) .t-input-block, .t-form__inputsbox_inrow .t-input-group_width25:not(.t-input-group_inonerow) .t-input-title {
+  width: calc(25% - 11.25px);
+}
+
+.t-form__inputsbox_inrow .t-input-group_width33:not(.t-input-group_inonerow) .t-input-block, .t-form__inputsbox_inrow .t-input-group_width33:not(.t-input-group_inonerow) .t-input-title {
+  width: calc(33.3333% - 10px);
+}
+
+.t-form__inputsbox_inrow .t-input-group_width50:not(.t-input-group_inonerow) .t-input-block, .t-form__inputsbox_inrow .t-input-group_width50:not(.t-input-group_inonerow) .t-input-title {
+  width: calc(50% - 7.5px);
+}
+
+.t-form__inputsbox_inrow .t-input-group_inonerow:not(.t-input-group_width100):not(.t-input-group_width50):not(.t-input-group_width33):not(.t-input-group_width25), .t-form__inputsbox_inrow .t-input-group_width100:not(.t-input-group_inonerow) .t-input-block, .t-form__inputsbox_inrow .t-input-group_width100:not(.t-input-group_inonerow) .t-input-title {
+  width: 100%;
+}
+
+.t-form__inputsbox_inrow .t-input-group_widthdef.t-input-group_inonerow .t-datepicker__wrapper, .t-form__inputsbox_inrow .t-input-group_widthdef.t-input-group_inonerow .t-inputtime {
+  max-width: 100%;
+}
+
+.t-form__inputsbox_inrow .t-input-group_width25 .t-datepicker__icon {
+  display: none;
+}
+
+.t-select {
+  appearance: none;
+  box-sizing: border-box;
+  color: initial;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  height: 60px;
+  padding: 0 45px 0 20px;
+  font-size: 16px;
+  line-height: 1.33;
+}
+
+.t-select_bbonly {
+  outline: none;
+  background-color: #0000 !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.t-select_bbonly option {
+  color: #000;
+  background-color: #fff;
+}
+
+#allrecords .t-select.t-focusable {
+  outline-offset: 4px;
+  outline-style: auto;
+  outline-color: #2015ff;
+}
+
+.t-select__wrapper {
+  position: relative;
+}
+
+.t-select__wrapper:after {
+  content: " ";
+  pointer-events: none;
+  border: 5px solid #0000;
+  border-top: 6px solid #000;
+  border-bottom-width: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+}
+
+.t-select::-ms-expand {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.t-select__wrapper_bbonly:after {
+  right: 0 !important;
+}
+
+.t-radio__wrapper {
+  margin-top: 5px;
+}
+
+.t-input-block_rd-flex .t-checkboxes__wrapper, .t-input-block_rd-flex .t-checkboxes__wrapper fieldset, .t-input-block_rd-flex .t-radio__wrapper, .t-input-block_rd-flex .t-radio__wrapper fieldset {
+  -webkit-column-gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 15px;
+  display: flex;
+}
+
+.t-input-block_rd-flex .t-checkboxes__wrapper fieldset, .t-input-block_rd-flex .t-radio__wrapper fieldset {
+  width: 100%;
+}
+
+.t-input-block_rd-flex.t-input-block_rd-width25 .t-checkboxes__wrapper, .t-input-block_rd-flex.t-input-block_rd-width25 .t-checkboxes__wrapper fieldset, .t-input-block_rd-flex.t-input-block_rd-width25 .t-radio__wrapper, .t-input-block_rd-flex.t-input-block_rd-width25 .t-radio__wrapper fieldset, .t-input-block_rd-flex.t-input-block_rd-width33 .t-checkboxes__wrapper, .t-input-block_rd-flex.t-input-block_rd-width33 .t-checkboxes__wrapper fieldset, .t-input-block_rd-flex.t-input-block_rd-width33 .t-radio__wrapper, .t-input-block_rd-flex.t-input-block_rd-width33 .t-radio__wrapper fieldset, .t-input-block_rd-flex.t-input-block_rd-width50 .t-checkboxes__wrapper, .t-input-block_rd-flex.t-input-block_rd-width50 .t-checkboxes__wrapper fieldset, .t-input-block_rd-flex.t-input-block_rd-width50 .t-radio__wrapper, .t-input-block_rd-flex.t-input-block_rd-width50 .t-radio__wrapper fieldset {
+  justify-content: flex-start;
+}
+
+.t-input-block.t-input-block_rd-flex:not(.t-input-block_rd-width50):not(.t-input-block_rd-width33):not(.t-input-block_rd-width25) .t-checkboxes__wrapper, .t-input-block.t-input-block_rd-flex:not(.t-input-block_rd-width50):not(.t-input-block_rd-width33):not(.t-input-block_rd-width25) .t-radio__wrapper {
+  -webkit-column-gap: 25px;
+  column-gap: 25px;
+}
+
+.t-input-block_rd-flex.t-input-block_rd-width25 .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width25 .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width25 .t-radio__ownvariant-wrapper, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width25 .t-checkbox__control {
+  width: calc(25% - 11.25px);
+}
+
+.t-input-block_rd-flex.t-input-block_rd-width33 .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width33 .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width33 .t-radio__ownvariant-wrapper, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width33 .t-checkbox__control {
+  width: calc(33.3333% - 10px);
+}
+
+.t-input-block_rd-flex.t-input-block_rd-width50 .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width50 .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width50 .t-radio__ownvariant-wrapper, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width50 .t-checkbox__control {
+  width: calc(50% - 7.5px);
+}
+
+.t-checkbox__control {
+  cursor: pointer;
+  display: table;
+  position: relative;
+}
+
+.t-checkbox__control.t-checkbox__control_flex {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.t-checkbox__control .t-checkbox {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.t-checkbox__indicator {
+  box-sizing: border-box;
+  opacity: .6;
+  vertical-align: middle;
+  border: 2px solid #000;
+  width: 20px;
+  height: 20px;
+  transition: all .2s;
+  display: inline-block;
+  position: relative;
+}
+
+.t-checkbox__indicator, .t-radio__indicator {
+  flex-shrink: 0;
+}
+
+.t-checkbox__indicator:after {
+  content: "";
+  border: 2px solid #000;
+  border-width: 0 2px 2px 0;
+  width: 3px;
+  height: 8px;
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  transform: rotate(45deg);
+}
+
+.t-checkbox__control .t-checkbox:checked ~ .t-checkbox__indicator {
+  opacity: 1;
+}
+
+.t-checkbox__control .t-checkbox:checked ~ .t-checkbox__indicator:after {
+  display: block;
+}
+
+.t-checkbox__labeltext, .t-checkbox__labeltext div {
+  display: inline;
+}
+
+#allrecords ul.t-checkboxes__wrapper {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.t-checkboxes__wrapper .t-checkbox__control, .t-checkboxes__wrapper .t-ownvariant-wrapper_flex {
+  margin: 10px 0;
+}
+
+.t-radio {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.t-radio__control {
+  cursor: pointer;
+  margin: 0 0 10px;
+  display: table;
+  position: relative;
+}
+
+.t-checkbox__control.t-text_xs, .t-radio__control.t-text_xs {
+  line-height: 1;
+}
+
+.t-input-block:not(.t-input-block_rd-flex) .t-radio__control {
+  width: 100%;
+}
+
+.t-input-block .t-ownvariant-wrapper_flex .t-radio__control, .tn-atom .t-input__own-answer-wrapper .t-radio__control {
+  width: auto;
+}
+
+.t-input-block .t-ownvariant-wrapper_flex .t-radio__control {
+  align-items: center;
+  display: flex;
+}
+
+.t-radio__control:first-child {
+  margin: 3px 0 10px;
+}
+
+.t-radio__control:last-child {
+  margin: 0;
+}
+
+.t-input-block_rd-flex .t-radio__control, .t-input-block_rd-flex .t-radio__control:first-child, .t-input-block_rd-flex .t-radio__control:last-child {
+  margin: 0 0 10px;
+}
+
+.t-radio__indicator {
+  box-sizing: border-box;
+  opacity: .6;
+  vertical-align: middle;
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  transition: all .2s;
+  display: inline-block;
+  position: relative;
+}
+
+.t-radio__indicator:after {
+  content: "";
+  opacity: 0;
+  background: #000;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  transition: all .2s;
+  position: absolute;
+  inset: 0;
+}
+
+.t-radio__control .t-radio:checked ~ .t-radio__indicator, .t-radio__control .t-radio:checked ~ .t-radio__indicator:after {
+  opacity: 1;
+}
+
+.t-input-block_rd-flex .t-checkbox__control, .t-input-block_rd-flex .t-radio__control {
+  box-sizing: border-box;
+}
+
+.t-rate__wrapper_numbers {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.t-rate__wrapper_icons {
+  display: inline-block;
+}
+
+.t-rate__wrapper .t-rate__control:first-child, .t-rate__wrapper [type="radio"] {
+  margin: 0;
+  padding: 0;
+}
+
+.t-rate__text-wrapper {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 11px;
+  display: flex;
+}
+
+.t-rate__text {
+  width: 50%;
+  line-height: 1.2;
+}
+
+.t-rate__wrapper_icons-3 .t-rate__text {
+  width: 80px;
+}
+
+.t-rate__text_start {
+  text-align: left;
+}
+
+.t-rate__text_end {
+  text-align: right;
+}
+
+.t-rate__control {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.t-rate__wrapper_numbers .t-rate__control {
+  flex: auto;
+  height: 40px;
+}
+
+.t-rate__wrapper_numbers .t-rate__control .t-rate__indicator {
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  transition: all .2s;
+  display: flex;
+  position: relative;
+}
+
+.t-rate__wrapper_numbers .t-rate__control .t-rate__indicator:after {
+  content: "";
+  opacity: 0;
+  background: #000;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  transition: all .2s;
+  position: absolute;
+  inset: 0;
+}
+
+.t-rate__wrapper_numbers .t-rate:checked + .t-rate__indicator {
+  background-color: #0000001a;
+}
+
+.t-rate__wrapper_numbers .t-rate__indicator {
+  background-color: #0000;
+  border: 1px solid #000;
+}
+
+.t-rate__wrapper_numbers .t-rate__control + .t-rate__control .t-rate__indicator {
+  border-left: none !important;
+}
+
+.t-rate__wrapper_numbers .t-rate__control:hover .t-rate__indicator {
+  background-color: #0000001a;
+}
+
+.t-rate__wrapper_numbers .t-rate__text-wrapper {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 6px;
+  display: flex;
+}
+
+.t-rate__icons {
+  flex-wrap: nowrap;
+  font-size: 0;
+  display: flex;
+}
+
+.t-rate__icons .t-rate:checked ~ .t-rate__control > .t-rate__indicator svg path, .t-rate__icons .t-rate__control .t-rate__indicator svg path, .t-rate__icons:hover > .t-rate__control:hover ~ .t-rate ~ .t-rate__control > .t-rate__indicator svg path {
+  opacity: .3;
+}
+
+.t-rate__icons:hover > .t-rate + .t-rate__control > .t-rate__indicator svg path, .t-rate__icons > .t-rate:checked + .t-rate__control > .t-rate__indicator svg path, .t-rate__icons > .t-rate ~ .t-rate__control:hover > .t-rate__indicator svg path, .t-rate__wrapper_active .t-rate__icons .t-rate__control .t-rate__indicator svg path {
+  opacity: 1;
+}
+
+.t-rate__wrapper_icons .t-rate__control {
+  padding-right: 18px;
+}
+
+.t-rate__wrapper_icons .t-rate__control:last-of-type {
+  padding-right: 0;
+}
+
+.t-rate__wrapper_icons .t-rate__indicator {
+  max-width: 40px;
+}
+
+.t-rate__wrapper_icons .t-rate__indicator svg {
+  width: 100%;
+  height: auto;
+}
+
+.t-rate {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.t-step-form__step {
+  display: none;
+}
+
+.t-step-form__step_active {
+  display: block !important;
+}
+
+.t-step-form__step_fadeInUp {
+  animation: .7s fade-in, .7s move-up;
+}
+
+.t-step-form__step_fadeOutDown {
+  pointer-events: none;
+  animation: .4s fade-out, .4s move-down;
+}
+
+.t-step-form__step_fadeIn {
+  animation: .7s fade-in;
+}
+
+.t-step-form__step_fadeOut {
+  pointer-events: none;
+  animation: .4s fade-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(15px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .t-radio:focus-visible + .t-radio__indicator, .t-checkbox:focus-visible + .t-checkbox__indicator {
+    box-shadow: 0 0 0 3px #0096ff;
+  }
+}
+
+@media screen and (width <= 640px) {
+  .t-rate__icons {
+    justify-content: space-between;
+  }
+
+  .t-rate__wrapper_icons .t-rate__control {
+    padding-right: 10px;
+  }
+
+  .t-rate__wrapper_icons-3 .t-rate__text {
+    width: 50%;
+  }
+}
+
+.t-inputquantity__wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.t-inputquantity {
+  text-align: center;
+  width: 70px;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.t-inputquantity__btn {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  background-color: #0000;
+  border: none;
+  margin: 0;
+  padding: 0 .5rem;
+  font-size: 26px;
+}
+
+.t-form__inputsbox_inrow .t-input-group_width100 .t-inputquantity, .t-form__inputsbox_inrow .t-input-group_width25 .t-inputquantity, .t-form__inputsbox_inrow .t-input-group_width33 .t-inputquantity, .t-form__inputsbox_inrow .t-input-group_width50 .t-inputquantity {
+  text-align: left;
+  width: 100% !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.t-range:focus-visible {
+  outline-offset: 4px;
+  outline-offset: 2px;
+  outline-style: auto;
+  outline-color: #2015ff;
+}
+
+.t-form .uploadcare-widget-button {
+  background: #333;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.t-form .uploadcare-widget-button:hover {
+  background: #444;
+}
+
+.t-form .uploadcare--widget__button {
+  cursor: pointer;
+}
+
+legend.t-input-title {
+  padding-left: 0;
+}
+
+.t-input-title {
+  vertical-align: middle;
+  height: 100%;
+  padding-right: 10px;
+  display: block;
+}
+
+.t-input-group_inonerow .t-input-title {
+  padding-right: 0;
+}
+
+.t-input-subtitle {
+  vertical-align: middle;
+  height: 100%;
+  padding-right: 10px;
+  display: block;
+}
+
+.t-form__bottom-text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (width <= 479px) {
+  .t-form__inputsbox_flex .t-input-group, .t-form__inputsbox_flex .t-input-group.t-input-group_inonerow, .t-form__inputsbox_inrow .t-input-group_width100:not(.t-input-group_inonerow) .t-input-block, .t-form__inputsbox_inrow .t-input-group_width100:not(.t-input-group_inonerow) .t-input-title, .t-form__inputsbox_inrow .t-input-group_width25:not(.t-input-group_inonerow) .t-input-block, .t-form__inputsbox_inrow .t-input-group_width25:not(.t-input-group_inonerow) .t-input-title, .t-form__inputsbox_inrow .t-input-group_width33:not(.t-input-group_inonerow) .t-input-block, .t-form__inputsbox_inrow .t-input-group_width33:not(.t-input-group_inonerow) .t-input-title, .t-form__inputsbox_inrow .t-input-group_width50:not(.t-input-group_inonerow) .t-input-block, .t-form__inputsbox_inrow .t-input-group_width50:not(.t-input-group_inonerow) .t-input-title {
+    width: 100%;
+  }
+
+  .t-input-group_inonerow:not(.t-input-group_inrow-last) {
+    margin-right: 0;
+  }
+
+  .t-input-group_inonerow .t-input-title {
+    padding-right: 10px;
+  }
+
+  .t-input-block_rd-flex.t-input-block_rd-width25 .t-checkboxes__wrapper, .t-input-block_rd-flex.t-input-block_rd-width25 .t-radio__wrapper, .t-input-block_rd-flex.t-input-block_rd-width33 .t-checkboxes__wrapper, .t-input-block_rd-flex.t-input-block_rd-width33 .t-radio__wrapper, .t-input-block_rd-flex.t-input-block_rd-width50 .t-checkboxes__wrapper, .t-input-block_rd-flex.t-input-block_rd-width50 .t-radio__wrapper {
+    justify-content: flex-start;
+  }
+
+  .t-input-block_rd-flex.t-input-block_rd-width25 .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width25 .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width25 .t-radio__ownvariant-wrapper, .t-input-block_rd-flex.t-input-block_rd-width33 .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width33 .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width33 .t-radio__ownvariant-wrapper, .t-input-block_rd-flex.t-input-block_rd-width50 .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width50 .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width50 .t-radio__ownvariant-wrapper, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width25 .t-checkbox__control, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width33 .t-checkbox__control, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width50 .t-checkbox__control {
+    width: 100%;
+  }
+
+  .t-input-block_rd-flex.t-input-block_rd-width25.t-input-block_rd-mobile-half .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width25.t-input-block_rd-mobile-half .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width25.t-input-block_rd-mobile-half .t-radio__ownvariant-wrapper, .t-input-block_rd-flex.t-input-block_rd-width33.t-input-block_rd-mobile-half .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width33.t-input-block_rd-mobile-half .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width33.t-input-block_rd-mobile-half .t-radio__ownvariant-wrapper, .t-input-block_rd-flex.t-input-block_rd-width50.t-input-block_rd-mobile-half .t-checkboxes__item, .t-input-block_rd-flex.t-input-block_rd-width50.t-input-block_rd-mobile-half .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width50.t-input-block_rd-mobile-half .t-radio__ownvariant-wrapper, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width25.t-input-block_rd-mobile-half .t-checkbox__control, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width33.t-input-block_rd-mobile-half .t-checkbox__control, .tn-atom__form .t-input-block_rd-flex.t-input-block_rd-width50.t-input-block_rd-mobile-half .t-checkbox__control {
+    width: calc(50% - 7.5px);
+  }
+
+  .t-input-block.t-input-block_rd-flex:not(.t-input-block_rd-width50):not(.t-input-block_rd-width33):not(.t-input-block_rd-width25) .t-checkboxes__item, .t-input-block.t-input-block_rd-flex:not(.t-input-block_rd-width50):not(.t-input-block_rd-width33):not(.t-input-block_rd-width25) .t-radio__control, .t-input-block.t-input-block_rd-flex:not(.t-input-block_rd-width50):not(.t-input-block_rd-width33):not(.t-input-block_rd-width25) .t-radio__ownvariant-wrapper, .t-input-block_rd-flex.t-input-block_rd-width25.t-input-block_rd-mobile-half .t-radio__ownvariant-wrapper .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width33.t-input-block_rd-mobile-half .t-radio__ownvariant-wrapper .t-radio__control, .t-input-block_rd-flex.t-input-block_rd-width50.t-input-block_rd-mobile-half .t-radio__ownvariant-wrapper .t-radio__control, .tn-atom__form .t-input-block.t-input-block_rd-flex:not(.t-input-block_rd-width50):not(.t-input-block_rd-width33):not(.t-input-block_rd-width25) .t-checkbox__control {
+    width: 100%;
+  }
+
+  .t-form__inputsbox_inrow .t-input-group_width25 .t-datepicker__icon {
+    display: block;
+  }
+
+  .t-form__inputsbox_inrow .t-input-group_width100 .t-inputquantity, .t-form__inputsbox_inrow .t-input-group_width25 .t-inputquantity, .t-form__inputsbox_inrow .t-input-group_width33 .t-inputquantity, .t-form__inputsbox_inrow .t-input-group_width50 .t-inputquantity {
+    text-align: center;
+    width: 70px !important;
+  }
+
+  .tn-atom .t-input-block_rd-flex .t-input__own-answer-wrapper .t-checkbox__control, .tn-atom .t-input-block_rd-flex .t-input__own-answer-wrapper .t-radio__control {
+    width: auto !important;
+  }
+}
+
+.t-checkboxes__ownvariant-wrapper .t-input-block, .t-radio__ownvariant-wrapper .t-input-block {
+  position: relative;
+}
+
+.t-ownvariant-wrapper_flex {
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.t-ownvariant-wrapper_flex .t-checkbox__control, .t-ownvariant-wrapper_flex .t-radio__control {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.t-ownvariant-wrapper_flex .t-input-ownanswer {
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  line-height: 1;
+  display: none;
+}
+
+.t-input-ownanswer + .t-input__vis-ph {
+  display: none;
+}
+
+.t-input-ownanswer.t-input-ownanswer_active + .t-input__vis-ph {
+  display: block;
+}
+
+.t-input-error {
+  color: red;
+  margin-top: 5px;
+  font-size: 13px;
+  display: none;
+}
+
+.t-form .js-error-control-box .t-input-error {
+  display: block;
+}
+
+.t-form .js-error-control-box .t-checkbox__control, .t-form .js-error-control-box .t-checkboxes__wrapper, .t-form .js-error-control-box .t-input:not(.t-input-phonemask):not(.t-input-ownanswer):not(.t-input__own-answer), .t-form .js-error-control-box .t-radio__wrapper, .t-form .js-error-control-box .t-rate__wrapper, .t-form .js-error-control-box .t-select, .t-form .js-error-control-box .uploadcare-widget {
+  border: 1px solid red !important;
+}
+
+#allrecords .t-form .js-error-control-box .t-checkboxes__wrapper, .t-form .js-error-control-box .t-checkbox__control, .t-form .js-error-control-box .t-checkboxes__wrapper, .t-form .js-error-control-box .t-radio__wrapper, .t-form .js-error-control-box .t-rate__wrapper {
+  padding: 10px;
+}
+
+:is(#allrecords .t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-checkboxes__wrapper, :is(#allrecords .t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-radio__wrapper {
+  padding: unset;
+}
+
+:is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-checkboxes__wrapper, :is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-radio__wrapper, :is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-rate__wrapper {
+  border: unset !important;
+}
+
+.t-input-group_cb:is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-checkbox__control, .t-input-group_rd:is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-input-block, .t-input-group_rs:is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-input-block, :is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-input:not(.t-input-phonemask):not(.t-input-ownanswer):not(.t-input__own-answer), :is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-select, :is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .uploadcare-widget {
+  border: 1px solid red !important;
+}
+
+.t-input-group_cb:is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-checkbox__control, .t-input-group_rd:is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-input-block, :is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-rate__wrapper {
+  padding: 10px;
+}
+
+.t-input-group_cb:is(.t-form .js-error-control-box:has(.t-input-block + .t-input-error)) .t-checkbox__control {
+  border-radius: inherit;
+}
+
+.t-checkbox__labeltext {
+  -webkit-margin-start: 10px;
+  margin-inline-start: 10px;
+}
+
+.t-form .js-error-control-box .t-checkboxes__wrapper .t-checkbox__control {
+  padding: 0;
+  border: none !important;
+}
+
+.t-form .js-error-control-box .t-input.t-input_bbonly:not(.t-input__own-answer) {
+  padding-left: 10px !important;
+}
+
+.t-form__errorbox-bottom {
+  display: none;
+}
+
+.t-form__errorbox-wrapper {
+  text-align: center;
+  background: #f95d51;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.t-form__errorbox-text {
+  box-sizing: border-box;
+  color: #fff;
+  padding: 0 10px 10px;
+  list-style: none;
+}
+
+#allrecords .t-form__errorbox-text .t-form__errorbox-link {
+  color: #fff;
+}
+
+#allrecords ul.t-form__errorbox-text {
+  margin-bottom: 0;
+  padding-left: 10px;
+  list-style: none;
+}
+
+#allrecords .t-form__errorbox-text a.t-form__errorbox-item {
+  color: #fff;
+}
+
+.t-form__errorbox-item {
+  margin-top: 10px;
+  display: none;
+}
+
+.t-form__errorbox-middle {
+  width: 100%;
+}
+
+#allrecords .t-form__errorbox-item .t-form__errorbox-link, #allrecords .t-form__errorbox-item .t-form__errorbox-link:hover {
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.t-form__successbox {
+  color: #fff;
+  text-align: center;
+  background: #62c584;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.t-form option {
+  color: #000;
+}
+
+@keyframes t-submit-spinner {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.t-form__inputsbox_flex .t-form__submit, .t-form__inputsbox_flex .tn-form__submit {
+  width: 100%;
+}
+
+.t-form .t-submit {
+  position: relative;
+}
+
+.t-btn.t-btn_sending, .t-form .t-submit.t-btn_sending:not(.tn-form__submit-gradient) {
+  color: #0000 !important;
+}
+
+.t-btn.t-btn_sending:not(.tn-form__submit-gradient):before, .t-form .t-btn_sending:not(.tn-form__submit-gradient):before {
+  box-sizing: border-box;
+  content: "";
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  animation: .6s linear infinite t-submit-spinner;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.tn-elem .tn-form__submit .t-submit.tn-form__submit-gradient {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.tn-elem .tn-form__submit .t-submit.tn-form__submit-gradient:after, .tn-elem .tn-form__submit .t-submit.tn-form__submit-gradient:before {
+  box-sizing: content-box;
+  content: "";
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  transition: opacity .2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tn-elem .tn-form__submit .t-submit.tn-form__submit-gradient:before {
+  opacity: 1;
+  z-index: -2;
+  background-color: #0000;
+}
+
+.tn-elem .tn-form__submit .t-submit.tn-form__submit-gradient:after {
+  opacity: 0;
+  z-index: -1;
+  background-image: none;
+}
+
+.tn-elem .tn-form__submit .t-submit.tn-form__submit-gradient:hover:after {
+  opacity: 1;
+}
+
+.tn-atom .t-input__own-answer-wrapper {
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.tn-atom .t-input__own-answer-wrapper.t-input__own-answer-wrapper-checkbox {
+  margin-top: 10px;
+}
+
+.t-input-block_rd-flex .t-input__own-answer-wrapper {
+  width: 100%;
+}
+
+.tn-atom .t-input-block_rd-flex .t-input__own-answer-wrapper {
+  width: auto;
+}
+
+.tn-atom .t-input__own-answer-wrapper .t-checkbox__control, .tn-atom .t-input__own-answer-wrapper .t-radio__control {
+  flex-shrink: 0;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 4px;
+  display: inline-flex;
+}
+
+.tn-atom .t-input__own-answer {
+  box-sizing: content-box;
+  border-bottom: 1px solid #000;
+  height: 20px;
+  padding-bottom: 3px;
+  display: none;
+}
+
+.tn-atom .t-input__own-answer--active {
+  display: block;
+}
+
+.t-checkboxes__wrapper_button .t-checkboxes__item, .t-radio__wrapper_button .t-radio__item {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  align-items: center;
+  height: 60px;
+  padding: 0 15px;
+  display: flex;
+}
+
+.t-input-group_rd .t-checkbox__control, .t-input-group_rd .t-radio__item {
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.t-input-group_rd .t-checkbox__control .t-checkbox__indicator, .t-input-group_rd .t-radio__item .t-radio__indicator {
+  margin-right: 0;
+}
+
+.t-input-group_rd .t-checkbox__control {
+  width: 100%;
+  height: 100%;
+}
+
+.t-input-group_rd .t-input-block_rd-flex .t-checkbox__control, .t-input-group_rd .t-input__own-answer-wrapper .t-checkbox__control {
+  width: auto;
+  height: auto;
+}
+
+.t-checkboxes__wrapper_button .t-ownvariant-wrapper_flex .t-t-checkbox__control, .t-radio__wrapper_button .t-ownvariant-wrapper_flex .t-radio__control {
+  margin: 0;
+}
+
+.t-checkboxes__wrapper_button .t-ownvariant-wrapper_flex .t-input-ownanswer, .t-radio__wrapper_button .t-ownvariant-wrapper_flex .t-input-ownanswer {
+  border: none;
+}
+
+.t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel, .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel {
+  -webkit-column-gap: unset;
+  column-gap: unset;
+}
+
+.t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__control, .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__control {
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.t-checkboxes__ownvariant_withlabel .t-checkbox__ownvariant-input-wrapper, .t-radio__ownvariant_withlabel .t-radio__ownvariant-input-wrapper {
+  -webkit-column-gap: 10px;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.t-checkboxes__ownvariant_withlabel .t-checkbox__title, .t-radio__ownvariant_withlabel .t-radio__title {
+  flex-shrink: 0;
+}
+
+.t-checkboxes__wrapper_button .t-ownvariant-wrapper_flex .t-input-ownanswer, .t-radio__wrapper_button .t-ownvariant-wrapper_flex .t-input-ownanswer {
+  padding-bottom: 0;
+}
+
+.t-input-ownanswer {
+  text-overflow: ellipsis;
+}
+
+.t-checkboxes__wrapper_button .t-checkboxes__item, .t-radio__wrapper_button .t-radio__item {
+  margin-bottom: 15px;
+}
+
+.t-checkboxes__wrapper_button .t-checkboxes__item:last-of-type, .t-radio__wrapper_button .t-radio__ownvariant-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+
+.t-input-block_rd-width25 .t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__ownvariant-input-wrapper, .t-input-block_rd-width25 .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__ownvariant-input-wrapper, .t-input-block_rd-width33 .t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__ownvariant-input-wrapper, .t-input-block_rd-width33 .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__ownvariant-input-wrapper {
+  flex-wrap: wrap;
+}
+
+.t-input-block_rd-width25 .t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__title, .t-input-block_rd-width25 .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__title, .t-input-block_rd-width33 .t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__title, .t-input-block_rd-width33 .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__title {
+  flex-shrink: 1;
+}
+
+.t-form__hidden, [data-hidden-by-condition="true"] {
+  display: none !important;
+}
+
+@media screen and (width <= 479px) {
+  .t-input-block_rd-width25 .t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__ownvariant-input-wrapper, .t-input-block_rd-width25 .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__ownvariant-input-wrapper, .t-input-block_rd-width33 .t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__ownvariant-input-wrapper, .t-input-block_rd-width33 .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__ownvariant-input-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .t-input-block_rd-width25 .t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__title, .t-input-block_rd-width25 .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__title, .t-input-block_rd-width33 .t-ownvariant-wrapper_flex.t-checkboxes__ownvariant_withlabel .t-checkbox__title, .t-input-block_rd-width33 .t-ownvariant-wrapper_flex.t-radio__ownvariant_withlabel .t-radio__title {
+    flex-shrink: 0;
+  }
+}
+
+.t-form-success-popup_new.t-form-success-popup {
+  cursor: pointer;
+  z-index: 10000;
+  background-color: #000c;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.t-body_success-popup-showed {
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.t-form-success-popup_new .t-form-success-popup__wrapper {
+  box-sizing: border-box;
+  cursor: default;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.t-form-success-popup_new .t-form-success-popup__close-icon {
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.t-form-success-popup_new .t-form-success-popup__close-icon svg {
+  display: block;
+}
+
+.t-form-success-popup_new .t-form-success-popup__content-icon {
+  margin-bottom: 15px;
+}
+
+.t-form-success-popup_new .t-form-success-popup__title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.23;
+}
+
+.t-form-success-popup_new .t-form-success-popup__text {
+  margin-bottom: 10px;
+  padding-top: 0;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.t-form-success-popup_new .t-form-success-popup__title.t-form-success-popup_hidden + .t-form-success-popup__text {
+  font-size: 20px;
+}
+
+.t-form-success-popup_new .t-form-success-popup__button {
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  min-width: 130px;
+  margin-top: 15px;
+  padding: 18px 44px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.t-form-success-popup_new .t-form-success-popup__info {
+  margin-top: 13px;
+}
+
+.t-form-success-popup__info-timer, .t-form-success-popup_new .t-form-success-popup__info-text {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.t-form-success-popup_new .t-form-success-popup__info-text {
+  opacity: .4;
+}
+
+.t-form-success-popup_new .t-form-success-popup__info {
+  align-items: center;
+  display: inline-flex;
+}
+
+.t-form-success-popup_new .t-form-success-popup__info-timer {
+  margin-left: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.t-form-success-popup_new .t-form-success-popup__info-digit {
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.t-form-success-popup_new .t-form-success-popup__info-timer svg {
+  animation: .7s linear infinite t-submit-spinner;
+  display: block;
+}
+
+.t-form-success-popup_new .t-form-success-popup_hidden {
+  display: none;
+}
+
+@media screen and (width <= 640px) {
+  .t-form-success-popup_new .t-form-success-popup__wrapper {
+    max-width: 100%;
+    bottom: 0;
+    top: unset;
+    border-radius: 20px 20px 0 0;
+    animation: .5s forwards slideUpMobile;
+    transform: translateY(100%);
+  }
+
+  @keyframes slideUpMobile {
+    0% {
+      transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .t-form-success-popup_new .t-form-success-popup__title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .t-form-success-popup_new .t-form-success-popup__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .t-form-success-popup_new .t-form-success-popup__button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=page69100279.0c53745e.css.map */

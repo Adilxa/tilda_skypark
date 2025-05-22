@@ -2,7 +2,7 @@
 const { spawn } = require("child_process");
 
 // !!! Замените '/path/to/your/npm' на фактический путь, который вы получили от `which npm`
-const npmPath = "/usr/bin/npm"; // Пример, измените на ваш фактический путь
+const npmPath = "/usr/local/bin/npm"; // Пример, измените на ваш фактический путь
 
 console.log("Starting Parcel via npm run start...");
 
